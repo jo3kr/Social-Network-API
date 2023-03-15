@@ -2,13 +2,13 @@
   "name": "Social-Network-API",
   "version": "1.0.1",
   "description": "Mongoose back-end project",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index",
-    "seed": "node utils/seed",
-    "heroku-postbuild": "node utils/seed.js"
+    "start": "node server",
+    "dev": "nodemon server",
+    "seed": "node utils/dateFormat.js",
+    "heroku-postbuild": "node utils/dateFormat.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
