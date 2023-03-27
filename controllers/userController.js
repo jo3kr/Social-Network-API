@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const { User, Thought } = require("../models");
 const { populate } = require("../models/User");
 
@@ -87,8 +88,8 @@ const userController = {
   // add friend
   addFriend({ params }, res) {
     User.findOneAndUpdate(
-      { _id: params.userId },
-      { $addToSet: { friends: params.friendId } },
+      { _id: mongoose.Types.ObjectId(params.userId) }, // Convert userId to ObjectId
+      { $addToSet: { friends: mongoose.Types.ObjectId(params.friendId) } }, // Convert friendId to ObjectId
       { new: true, runValidators: true }
     )
       .then((dbUserData) => {
