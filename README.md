@@ -15,6 +15,8 @@ All routes are working and when you delete a user, their associated thoughts and
 ## Installation
 In the terminal, run 'node server.js'
 ## Usage
+Click the image below to see the demo!
+
 [![Demo Video](https://img.youtube.com/vi/_Z6YfcLGfJg/hqdefault.jpg)](https://www.youtube.com/watch?v=_Z6YfcLGfJg)
 ![example showing user deleted](assets/sonetapi1.png)
 ![example showing other users](assets/sonetapi2.png)
